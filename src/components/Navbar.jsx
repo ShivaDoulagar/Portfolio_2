@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AboutMe from "./AboutMe";
 
 const Navbar = () => {
 	const [activeSection, setActiveSection] = useState("about");
@@ -67,7 +68,11 @@ const Navbar = () => {
 			</nav>
 
 			<main className="p-6">
-				{activeSection === "about" && <div>about</div>}
+				{activeSection === "about" && (
+					<div>
+						<AboutMe />
+					</div>
+				)}
 				{activeSection === "experience" && <div>experience</div>}
 				{activeSection === "projects" && <div>projects</div>}
 				{activeSection === "tech" && <div>tech stack</div>}
