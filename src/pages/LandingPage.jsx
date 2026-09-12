@@ -5,7 +5,7 @@ import RightContent from "../components/RightContent";
 const LandingPage = () => {
 	return (
 		<div>
-			<div className="w-screen h-screen flex justify-around  gap-3 flex-wrap">
+			<div className="w-screen overflow-x-hidden h-screen flex justify-around  gap-3 flex-wrap">
 				<div className="left  md:flex-2 w-screen  flex items-center ">
 					<Profile />
 				</div>
